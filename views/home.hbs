@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	{{> header}}
+
+	<div class="about" id="about2">
+		<h3 class="title1">Give me WHEN and I say to you WHERE and HOW MUCH</h3><BR>
+		<div class="search">
+		<form method="post" action="https://httpbin.org/post">
+	<ul>
+		<li>
+			<datalist id="guests">
+				<option value="1 guest">
+				<option value="2 guest">
+				<option value="3 guest">
+				<option value="4 guest">
+				<option value="5 guest">
+			</datalist>
+			<label>Guests: <input type="text" list="guests" /></label>
+			<!-- input name="custname"; required--> 
+		</li><br>
+		<li>
+			<label>Date: </label>
+			<input type="date" id="start" name="trip-start"
+			value="2020-10-15"
+			min="2020-01-01" max="2023-12-31">
+		</li><br>
+		<li>
+			<!--label>Address: <input name="address"></label-->
+		
+			<datalist id="states">
+				<option value="La Tuque">
+				<option value="Senneterre">
+				<option value="Val-d'Or">
+				<option value="Ottawa">
+				<option value="Snow Lake">
+				<option value="Prince Edward County">
+				<option value="Calgary">
+				<option value="Elliot Lake">
+				<option value="Toronto">
+				<option value="Edmonton">
+				<option value="Caledon">
+				<option value="Bracebridge">
+				<option value="Lakeshore">
+			</datalist>
+			<label>Where <input type="text" list="states" /></label>	<label>Neighborhood: </label>
+			<input name="custname"; required> 
+		</li><br>
+		<button class="button" type="submit">Send</button>
+	
+	</ul></form>
+</div>
+</div>
+
+	<div class="about" id="about">
+		<h1 class="title1">Only Today</h1>
+
+		<div class="services2" id="services">			
+			<div class="diff_services">
+				<div class="diff_services_item">
+					<img src="images2/promo1.jpg" alt="service_image">
+					<h3 class="sub_title">Camper Shared With Couple</h3>
+					<p>Price per night: 15.00   Rating: 2/5<br>In the Winter you freeze</p>
+				</div>
+				<div class="diff_services_item">
+					<img src="images2/promo2.jpg" alt="service_image">
+					<h3 class="sub_title">Bedroom In Japanese Historical Building</h3>
+					<p>Price per night: 5569.00   Rating: 5/5<br>Might have bedbugs</p>
+				</div>
+				<div class="diff_services_item">
+					<img src="images2/promo3.jpg" alt="service_image">
+					<h3 class="sub_title">Red Car For Flexible Accommodation</h3>
+					<p>Price per night: 59.00   Rating: 1/5<br> No bathroom</p>
+				</div>
+			</div>
+		</div> 
+
+	</div>
+
+	<div class="about" id="about">
+		<h2>Only here you can find views like this, perfect rooms and wonderful experiences</h2>
+		<video width="680" height="385" controls>
+			<source src="images2/harbour.mp4" type="video/mp4">
+			
+		  Your browser does not support the video tag.
+		  </video>
+	</div>
+
+
+	<div class="mainpage">
+
+	<div class="productsMaster" id="prodMaster" >
+
+	<div class="services" id="services">
+		<h1 class="title">Welcome to the Best room finder!!!</h1>
+		<p>Tired of trying to find affordable rooms in your area?
+            <br><br>
+            Try out YUYU BnB. We have unique rooms for every situation, pocket and family size.
+            <br><br>
+			Our services are personalized for YOU! If you have a wish, tell us and we will try our best to find the perfect
+			room-match for you. ;D
+        </p>
+		<div class="diff_services">
+			<div class="diff_services_item">
+				<img src="images2/image1.jpg" alt="service_image">
+				<h3 class="sub_title">Get the best areas</h3>
+				<p></p>
+			</div>
+			<div class="diff_services_item">
+				<img src="images2/image2.jpg" alt="service_image">
+				<h3 class="sub_title">Find the best prices</h3>
+				<p></p>
+			</div>
+			<div class="diff_services_item">
+				<img src="images2/image3.jpg" alt="service_image">
+				<h3 class="sub_title">Find your unique desires</h3>
+				<p></p>
+			</div>
+		</div>
+	</div> 
+	
+	
+
+
+
+
+
+</div>
+	{{> footer}}
+
+	
+	
+</body>
+</html>

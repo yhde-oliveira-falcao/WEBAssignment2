@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>YUYU-BnB-Registration</title><!--This title goes on the browser part-->
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- This script above  is for the passwords-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="main_container" id="home"><!--the whole homepage-->
+
+	<div class="banner_image">
+		<div class="banner_content">
+			<h1>YUYU BnB<br> <span> <span></h1>
+			<p></p>
+			<div class="navbar_items">
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><a href="/index">ROOMS</a></li>
+					<li><a href="/contact">REGISTRATION</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+
+
+	<div class="contactus" id="contactus">
+		<h1 class="title">contact us</h1>
+		<div class="form_wrapper">
+			<!--form method="POST" action="https://httpbin.org/post"-->			<!--/form-->
+			<form action="/contact-form" method="POST" enctype="multipart/form-data">	
+				<div class="form_input">
+					<label>First name: </label>
+					<input type="text" id="fname" name="fname" placeholder="First Name" maxlength="25" required/> 
+				</div>
+				<div class="form_input">
+					<label>Last name: </label>
+            		<input type="text" name="lname" id="lname" placeholder="Last Name" maxlength="25" required/>
+				</div>
+				<div class="form_input">
+					<label>E-mail address: </label> 
+					<input type="email" name="email" id="email" placeholder="email@email.com" required/>
+				</div><br>
+
+
+
+				<div class="form_input">
+					<label>Create a Password: <input name="password" type="password"
+					id="password"
+					pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+							
+					title="Must contain 8 characters, uppercase, lowercase and number" required></label>
+				</div>
+
+				<div class="form_input">
+					<label>Confirm Password: <input name="cPassword" type="password"
+					id="confirmPassword" required></label>
+				</div><br>
+
+
+
+
+
+				<div class="form_input">
+					<label for="birthday">Date of Birth: </label>
+					<input type="date" id="birthday" name="birthday">
+				</div>
+				<div class="form_input">
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+						   required>
+					<small>Format: 1112224567</small>
+				</div><br>
+
+				<div class="form_input">
+					<label for="photo">Profile photo </label>
+					<input type="file" id="photo" name="photo">
+				</div><br>
+				<div class="form_input">
+					<label> <input type="checkbox" name="phoned" value="yes"> Would you like to receive offers and newsletter weekly? </label>
+				</div>
+
+				
+					<button class="button" type="submit">
+						<input type="submit" vallue="Submit"/>
+					</button>
+
+					<!-- label for="photo">Photo ID</label>
+        			<input id="photo" type="file" name="photo"/><br />
+        			<input type="submit" value="Submit File" /-->
+			</form>	  
+
+		</div>
+	</div>
+
+
+
+<!-- -->
+
+	<div class="footer">
+		<a href="#"></a>
+		<p>All images and this Website are proprietary art of Yuri Falcao and or taken from unsplash.com</p>
+	</div>
+
+</div>	
+	
+</body>
+</html>
