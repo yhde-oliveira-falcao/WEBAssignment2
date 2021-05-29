@@ -26,10 +26,10 @@ const UPLOAD = multer({ storage: STORAGE});
 
 //email setup
 var transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: '',
     auth: {
-        user: 'YuriWeb322@gmail.com',
-        pass: 'a123@4567'
+        user: '',
+        pass: ''
     },
 });
 
